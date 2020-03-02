@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <ion-app class="backgroundImg">
+      <ion-vue-router />
+    </ion-app>
   </div>
 </template>
 
@@ -29,4 +27,7 @@
     }
   }
 }
+  .backgroundImg {
+    --ion-background-color: #5c91ff;
+  }
 </style>
